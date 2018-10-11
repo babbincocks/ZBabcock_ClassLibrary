@@ -1,0 +1,5 @@
+C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\bin\Debug\ZBabcockLibrary.dll
+C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\bin\Debug\ZBabcockLibrary.pdb
+C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\obj\Debug\ZBabcockLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\obj\Debug\ZBabcockLibrary.dll
+C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\obj\Debug\ZBabcockLibrary.pdb
