@@ -7,13 +7,15 @@ using System.IO;
 
 namespace ZBabcockLibrary
 {
-    class HTMLReportBuilder
+    public class HTMLReportBuilder
     {
 
         private string _folder;
         private string _reportName;
         private Queue<string> _qHead = new Queue<string>();
         private Queue<string> _qBody = new Queue<string>();
+
+        private bool _styleExist = false;
 
         public HTMLReportBuilder()
         {
@@ -66,6 +68,10 @@ namespace ZBabcockLibrary
 
         private void EndReport()
         {
+            if(_styleExist)
+            {
+                _qHead.Enqueue("</style>");
+            }
             _qHead.Enqueue("</head>");
 
             _qBody.Enqueue("</body>");
@@ -73,16 +79,25 @@ namespace ZBabcockLibrary
         }
 
 
-        private void AddParagraph(string paragraphContents)
+        public void AddParagraph(string paragraphContents)
         {
             _qBody.Enqueue("<p>" + paragraphContents + "</p>");
         }
 
-        private void AddTable(List<string> columnTitles, Queue<string> contents)
+        public void AddTable(List<string> columnTitles, Queue<string> contents)
         {
             int rowTrack = 1;
             if(contents.Count % columnTitles.Count == 0)
             {
+                if(!_styleExist)
+                {
+                    _qHead.Enqueue("<style>");
+                    _qHead.Enqueue("table, th, td {border: 1px solid black; border-collapse: collapse;}");
+                    _styleExist = true;
+                }
+
+                
+
                 _qBody.Enqueue("<table>");
                 _qBody.Enqueue("<tr>");
                 foreach (string title in columnTitles)
@@ -100,11 +115,16 @@ namespace ZBabcockLibrary
                     }
 
                     _qBody.Enqueue("<td>" + contents.Dequeue() + "</td>");
+                    
 
                     if(rowTrack == columnTitles.Count)
                     {
                         _qBody.Enqueue("</tr>");
                         rowTrack = 1;
+                    }
+                    else
+                    {
+                        rowTrack++;
                     }
                 }
                 _qBody.Enqueue("</table>");

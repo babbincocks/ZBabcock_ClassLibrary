@@ -4,3 +4,8 @@ C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibr
 C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.dll
 C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.pdb
 C:\Users\Cyberadmin\Desktop\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.csprojAssemblyReference.cache
+C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\bin\Release\ZBabcockLibrary.dll
+C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\bin\Release\ZBabcockLibrary.pdb
+C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.dll
+C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.pdb
