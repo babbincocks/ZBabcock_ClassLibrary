@@ -84,6 +84,17 @@ namespace ZBabcockLibrary
             _qBody.Enqueue("<p>" + paragraphContents + "</p>");
         }
 
+        public void AddHeader(string headerText)
+        {
+            _qBody.Enqueue("<h1>" + headerText + "</h1>");
+        }
+
+        public void AddHeader(string headerText, int headerSize)
+        {
+            if(headerSize > 0 && headerSize < 7)
+            _qBody.Enqueue("<h" + headerSize + ">" + headerText + "</h" + headerSize + " > ");
+        }
+
         public void AddTable(List<string> columnTitles, Queue<string> contents)
         {
             int rowTrack = 1;
@@ -151,5 +162,30 @@ namespace ZBabcockLibrary
             swHTML.Flush();
             swHTML.Close();
         }
+
+        public void AddImage(string imagePath)
+        {
+            if(File.Exists(imagePath))
+            {
+                _qBody.Enqueue("<img src=\"" + imagePath + "\" alt=\"Image.\">");
+            }
+        }
+
+        public void AddImage(string imagePath, string imageTitle)
+        {
+            if (File.Exists(imagePath))
+            {
+                _qBody.Enqueue("<img src=\"" + imagePath + "\" alt=\"Image.\" title=\"Image\">");
+            }
+        }
+
+        public void AddImage(string imagePath, string imageTitle, string alternateMessage)
+        {
+            if (File.Exists(imagePath))
+            {
+                _qBody.Enqueue("<img src=\"" + imagePath + "\" alt=\"" + alternateMessage + "\">");
+            }
+        }
+
     }
 }

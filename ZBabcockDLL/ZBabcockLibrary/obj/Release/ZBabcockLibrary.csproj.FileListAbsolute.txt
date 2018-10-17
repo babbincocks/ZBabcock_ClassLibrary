@@ -9,3 +9,4 @@ C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\bi
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.dll
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.pdb
+C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\ZBabcockLibrary\obj\Release\ZBabcockLibrary.csprojAssemblyReference.cache
