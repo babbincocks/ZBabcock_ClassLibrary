@@ -19,17 +19,31 @@ namespace ZBabcockLibrary
 
         public HTMLReportBuilder()
         {
-            _reportName = "My Report";
-            _folder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            StartReport();
+            try
+            {
+                _reportName = "My Report";
+                _folder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                StartReport();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public HTMLReportBuilder(string fileName)
         {
+            try
+            { 
             _reportName = fileName;
             _folder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             StartReport();
-        }
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+}
 
         public HTMLReportBuilder(string fileName, string folderPath)
         {
@@ -175,7 +189,7 @@ namespace ZBabcockLibrary
         {
             if (File.Exists(imagePath))
             {
-                _qBody.Enqueue("<img src=\"" + imagePath + "\" alt=\"Image.\" title=\"Image\">");
+                _qBody.Enqueue("<img src=\"" + imagePath + "\" alt=\"Image.\" title=\"" + imageTitle + "\">");
             }
         }
 
@@ -183,7 +197,7 @@ namespace ZBabcockLibrary
         {
             if (File.Exists(imagePath))
             {
-                _qBody.Enqueue("<img src=\"" + imagePath + "\" alt=\"" + alternateMessage + "\">");
+                _qBody.Enqueue("<img src=\"" + imagePath + "\" alt=\"" + alternateMessage + "\" title=\"" + imageTitle + "\">");
             }
         }
 
