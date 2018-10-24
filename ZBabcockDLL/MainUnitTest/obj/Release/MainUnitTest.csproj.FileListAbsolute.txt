@@ -7,7 +7,6 @@ C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\bin\R
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\obj\Release\MainUnitTest.csprojAssemblyReference.cache
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\obj\Release\MainUnitTest.csproj.CoreCompileInputs.cache
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\obj\Release\MainUnitTest.csproj.CopyComplete
 C:\Users\Cyberadmin\Desktop\ZBabcock_ClassLibrary\ZBabcockDLL\MainUnitTest\obj\Release\MainUnitTest.dll
