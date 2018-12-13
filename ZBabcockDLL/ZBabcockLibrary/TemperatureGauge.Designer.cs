@@ -110,8 +110,10 @@
             // 
             // TemperatureGauge
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.Slider;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.rbCelsius);
             this.Controls.Add(this.rbFahr);
             this.Controls.Add(this.label2);
@@ -119,8 +121,9 @@
             this.Controls.Add(this.txtCelsius);
             this.Controls.Add(this.txtFahr);
             this.Controls.Add(this.tbTemp);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TemperatureGauge";
-            this.Size = new System.Drawing.Size(192, 262);
+            this.Size = new System.Drawing.Size(213, 264);
             ((System.ComponentModel.ISupportInitialize)(this.tbTemp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
